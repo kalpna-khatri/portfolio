@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalpna Khatri — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">Kalpna Khatri</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="closeMobileMenu()">Home</a>
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <section id="home">
+    <div class="hero-image-side">
+      <img class="hero-photo" src="/images/profile pic1.png" alt="Kalpna Khatri" />
+      <div class="hero-photo-placeholder">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+        </svg>
+        <span>YOUR PHOTO<br/>HERE</span>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Developer &amp; Designer</div>
+      <h1 class="hero-title">
+        My
+        <span>Portfolio</span>
+      </h1>
+      <p class="hero-sub">
+        Building thoughtful digital experiences — from intelligent apps to interactive interfaces. Code that solves real problems.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">Explore Work</a>
+        <a href="#contact" class="btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.22 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          Get in Touch
+        </a>
+      </div>
+      <div class="hero-page-num">Page | 01</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-stats reveal">
+      <div class="stat-box">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Passion</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">JS</div>
+        <div class="stat-label">Primary Stack</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Curiosity</div>
+      </div>
+    </div>
+
+    <div class="about-text reveal">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Crafting<br/>Digital<br/>Things</h2>
+      <p>
+        Hi, I'm <strong>Kalpna Khatri</strong> — a developer who loves building clean, functional, and meaningful web experiences. I enjoy turning ideas into polished products with attention to every detail.
+      </p>
+      <p>
+        From smart tools like a job-finder to creative galleries, I work across the full spectrum of front-end development — always learning, always building.
+      </p>
+      <div class="skills-grid">
+        <div class="skill-tag">HTML</div>
+        <div class="skill-tag">CSS</div>
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">Responsive Design</div>
+        <div class="skill-tag">UI/UX</div>
+        <div class="skill-tag">Git</div>
+        <div class="skill-tag">Problem Solving</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects-header">
+      <div class="projects-header-left">
+        <div class="section-label">Selected Work</div>
+        <h2 class="section-title reveal" style="font-family:var(--font-display);font-size:clamp(2.8rem,5vw,5rem);line-height:0.95;">Three<br/>Projects</h2>
+      </div>
+      <p style="color:var(--gray);font-size:0.82rem;max-width:280px;line-height:1.75;" class="reveal">
+        A curated set of builds — each solving a distinct problem with clean code and clear design intent.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal" onclick="openModal('jobfinder')">
+        <div class="project-thumb-placeholder">
+          <img class="project-thumb"  id="jobfinder-thumb"src="/images/job finder.png" alt="Smart Job Finder" />
+          <span style="color:#2a2a2a;">JOB FINDER</span>
+        </div>
+        <div class="project-info">
+          <div class="project-num">01 / 03</div>
+          <h3 class="project-name">Smart Job Finder</h3>
+          <p class="project-desc">An intelligent job search tool that filters and surfaces relevant opportunities based on your skills and preferences.</p>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">OOPs</span>
+            <span class="project-tag">Java Swing</span>
+          </div>
+          <span class="btn-view-project">
+            View Project
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" onclick="openModal('flavor-nest')">
+        <div class="project-thumb-placeholder">
+          <img class="project-thumb"   id="flavor-nest-thumb"src="/images/thumbnail.png" alt="Flavor Nest" />
+          <span style="color:#2a2a2a;">CALCULATOR</span>
+        </div>
+        <div class="project-info">
+          <div class="project-num">02 / 03</div>
+          <h3 class="project-name">Flavor Nest</h3>
+          <p class="project-desc">A clean, fully functional calculator with smooth animations and precise arithmetic logic built from scratch.</p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">CSS Grid</span>
+            <span class="project-tag">Asthetics</span>
+          </div>
+          <span class="btn-view-project">
+            View Project
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" onclick="openModal('gallery')">
+        <div class="project-thumb-placeholder">
+          <img class="project-thumb"   id="gallery-thumb" src="/images/asthetic gallery.png" alt="Gallery" />
+          <span style="color:#2a2a2a;">GALLERY</span>
+        </div>
+        <div class="project-info">
+          <div class="project-num">03 / 03</div>
+          <h3 class="project-name">Gallery</h3>
+          <p class="project-desc">A dynamic image gallery with filtering, lightbox preview, and smooth CSS-powered transitions and layout shifts.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <span class="btn-view-project">
+            View Project
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="modal-jobfinder" onclick="handleModalClick(event,'jobfinder')">
+    <div class="modal">
+      <div class="modal-close">
+        <span class="modal-close-title">Smart Job Finder</span>
+        <button class="modal-close-btn" onclick="closeModal('jobfinder')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-video-wrap">
+          <video src="/Asset/job.mp4" controls></video>
+        </div>
+
+        <p class="modal-desc">
+          Smart Job Finder is a web application that helps users discover relevant job opportunities by entering their skills and preferred role. It intelligently filters listings and presents them in a clean, scannable layout — saving time and reducing noise in the job search process.
+        </p>
+
+        <div class="modal-images-label">Screenshots</div>
+        <div class="modal-screenshots">
+          <img class="project-thumb" src="/images/1.png" alt="Job Search Interface">
+          <img class="project-thumb" src="/images/2.png" alt="Results Page">
+          <img class="project-thumb" src="/images/3.png" alt="Job Detail">
+          <img class="project-thumb" src="/images/4.png" alt="Job Detail">
+          <img class="project-thumb" src="/images/5(01).png" alt="Job Detail">
+          <img class="project-thumb" src="/images/6.png" alt="Job Detail">
+          <img class="project-thumb" src="/images/7.png" alt="Job Detail">
+          <img class="project-thumb" src="/images/8.png" alt="Job Detail">
+          <img class="project-thumb" src="/images/9.png" alt="Job Detail">
+          <img class="project-thumb" src="/images/10.png" alt="Job Detail">
+        </div>
+
+        <div class="modal-tech-row">
+          <span class="project-tag">Java</span>
+          <span class="project-tag">OOPs</span>
+          <span class="project-tag">Java Swing</span>
+          <span class="project-tag">Fetch API</span>
+          <span class="project-tag">CSV for Data</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-flavor-nest" onclick="handleModalClick(event,'flavor-nest')">
+    <div class="modal">
+      <div class="modal-close">
+        <span class="modal-close-title">Flavor Nest</span>
+        <button class="modal-close-btn" onclick="closeModal('flavor-nest')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-video-wrap">
+          <video src="/Asset/website.mp4" controls></video>
+        </div>
+
+        <p class="modal-desc">
+          A sleek, keyboard-friendly calculator built entirely with vanilla JavaScript. Supports all basic arithmetic operations, handles edge cases like division by zero, and features a smooth button animation system with satisfying micro-interactions.
+        </p>
+
+        <div class="modal-images-label">Screenshots</div>
+        <div class="modal-screenshots">
+          <img class="project-thumb" src="/images/p1.png" alt="Calculator UI">
+          <img class="project-thumb" src="/images/p2.png" alt="In use">
+          <img class="project-thumb" src="/images/p3.png" alt="Mobile view">
+          <img class="project-thumb" src="/images/p4.png" alt="Mobile view">
+          <img class="project-thumb" src="/images/p5.png" alt="Mobile view">
+          <img class="project-thumb" src="/images/p6.png" alt="Mobile view">
+          <img class="project-thumb" src="/images/p7.png" alt="Mobile view">
+          <img class="project-thumb" src="/images/p8.png" alt="Mobile view">
+          <img class="project-thumb" src="/images/p9.png" alt="Mobile view">
+          <img class="project-thumb" src="/images/p10.png" alt="Mobile view">
+        </div>
+
+        <div class="modal-tech-row">
+          <span class="project-tag">HTML5</span>
+          <span class="project-tag">CSS Grid</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">DOM Manipulation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-gallery" onclick="handleModalClick(event,'gallery')">
+    <div class="modal">
+      <div class="modal-close">
+        <span class="modal-close-title">Gallery</span>
+        <button class="modal-close-btn" onclick="closeModal('gallery')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-video-wrap">
+          <video src="/Asset/gallery.mp4" controls></video>
+        </div>
+
+        <p class="modal-desc">
+          A responsive image gallery featuring category-based filtering and a full-screen lightbox viewer. Images load with a fade-in stagger effect, and the masonry-inspired layout adapts gracefully to all screen sizes.
+        </p>
+
+        <div class="modal-images-label">Screenshots</div>
+        <div class="modal-screenshots">
+          <img class="project-thumb" src="/images/g1.png" alt="Gallery Grid">
+          <img class="project-thumb" src="/images/g2.png" alt="Lightbox View">
+          <img class="project-thumb" src="/images/g3.png" alt="Filter Active">
+          <img class="project-thumb" src="/images/g4.png" alt="Filter Active">
+        </div>
+
+        <div class="modal-tech-row">
+          <span class="project-tag">HTML5</span>
+          <span class="project-tag">CSS Flexbox</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">CSS Animations</span>
+          <span class="project-tag">Lightbox</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="reveal">
+        <h2 class="contact-title">Let's<br/><span>Talk</span></h2>
+        <p class="contact-note">
+          Whether it's a project idea, collaboration, or just a hello — I'd love to hear from you. Drop a message and I'll get back shortly.
+        </p>
+        <div class="contact-links">
+          <a class="contact-link-row" href="mailto:your@email.com">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">your@email.com</span>
+          </a>
+          <a class="contact-link-row" href="https://github.com/kalpna-khatri/Smart_job-Finder" target="_blank" data-favicon-domain="github.com">
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">github.com/kalpna-khatri</span>
+          </a>
+          <a class="contact-link-row" href="https://www.linkedin.com/in/kalpna-khatri-480498391/" target="_blank" data-favicon-domain="linkedin.com">
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">linkedin.com/in/kalpna-khatri-480498391/</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input class="form-input" type="text" placeholder="e.g. Kalpna Khatri" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input class="form-input" type="email" placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Tell me about your project or idea..."></textarea>
+        </div>
+        <button class="btn-send" onclick="handleFormSubmit()">Send Message →</button>
+        <p id="form-success" style="display:none;font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.1em;color:var(--gray);margin-top:0.5rem;">
+          ✓ Message sent! I'll reply soon.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-copy">© 2026 Kalpna Khatri — All rights reserved</span>
+    <span class="footer-logo">KK</span>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
